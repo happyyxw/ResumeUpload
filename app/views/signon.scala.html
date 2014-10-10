@@ -1,4 +1,3 @@
-@(title: String)
 <!DOCTYPE html>
 
 <html>
@@ -16,9 +15,9 @@
 <body>
 
       <div class="jumbotron">
-        <h2>Submit Your Email</h2>
-        @helper.form(action = routes.Application.enter) {
-        @if(title!=null) {@title}
+        <h2>Sign On</h2>
+        @helper.form(action = routes.Application.signOnEnter) {
+        
         <div class="form-group">
          Email: <input style="float:left" type="text" name="email">
          Password: <input style="float:left" type="text" name="password">

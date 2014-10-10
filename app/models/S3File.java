@@ -23,6 +23,8 @@ public class S3File extends Model {
     private String bucket;
 
     public String name;
+    
+    public String emailId;
 
     @Transient
     public File file;

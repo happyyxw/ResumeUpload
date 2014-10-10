@@ -4,8 +4,10 @@
 
 # Home page
 GET     /                           controllers.Application.index()
-GET     /login                           controllers.Application.login()
+GET     /login                           controllers.Application.login(intput: String)
+GET     /signon                           controllers.Application.signon()
 POST     /enter                           controllers.Application.enter()
+POST     /signonenter                           controllers.Application.signOnEnter()
 POST     /upload                           controllers.Application.upload()
 GET     /job_interests                           controllers.Application.jobInterests()
 
